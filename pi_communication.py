@@ -15,7 +15,6 @@ b = bus.read_byte_data(80,0)
 
 # Repeatedly print spi byte data.
 while 1:
-
     print(b)
 
 
