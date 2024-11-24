@@ -1,5 +1,5 @@
 import serial
-import roslibpy
+import rospy
 from smbus2 import SMBus
 
 #import roslibpy
@@ -19,6 +19,6 @@ while 1:
 
 
 #need to turn the two inputs in the spi bus into two distinct publisher nodes, then done i think :)
-client = roslibpy.Ros(host='localhost', port=9090)
+client = rospy.Ros(host='localhost', port=9090)
 
 
