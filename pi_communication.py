@@ -4,7 +4,7 @@ from smbus2 import SMBus
 
 #import roslibpy
 # Initialize Serial Port
-ser = serial.Serial(port = 'dev/tty/AMA0', baud = 9600, parity= serial.PARITY_NONE,timeout=1)
+ser = serial.Serial(port = 'dev/ttyAMA0', baud = 9600, parity= serial.PARITY_NONE,timeout=1)
 
 # create a smbus object
 bus = SMBus(1)
