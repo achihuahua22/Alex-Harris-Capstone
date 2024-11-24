@@ -1,5 +1,7 @@
 import serial
+import smbus2
 import rospy
+import time
 from smbus2 import SMBus
 
 #import roslibpy
@@ -7,7 +9,8 @@ from smbus2 import SMBus
 #ser = serial.Serial(port = 'dev/ttyAMA0', baud = 9600, parity= serial.PARITY_NONE,timeout=1)
 
 # create a smbus object
-bus = SMBus(1)
+bus = smbus2.SMBus(1)
+time.sleep(1)
 b = bus.read_byte_data(80,0)
 
 #look at spi adapter documentation to see address information
