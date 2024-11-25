@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import serial
 import smbus2
 import rospy
@@ -27,9 +27,6 @@ from std_msgs.msg import String
 # client = rospy.Ros(host='localhost', port=9090)
 
 
-def talker():
-    rospy.init_node("test_node")
-    rospy.loginfo("hello")
     # pub = rospy.Publisher('chatter', String, queue_size=10)
     # rospy.init_node('talker', anonymous=True)
     # rate = rospy.Rate(10) # 10hz
@@ -40,7 +37,5 @@ def talker():
     #     rate.sleep()
 
 if __name__ == '__main__':
-    try:
-        talker()
-    except rospy.ROSInterruptException:
-           pass
+    rospy.init_node("test_node")
+    rospy.loginfo("hello")
