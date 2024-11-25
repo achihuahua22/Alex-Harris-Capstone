@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import serial
-import smbus2
+#import smbus2
 import rospy
 import time
-from smbus2 import SMBus
-from std_msgs.msg import String
+#from smbus2 import SMBus
+#from std_msgs.msg import String
 
 #import roslibpy
 # Initialize Serial Port
