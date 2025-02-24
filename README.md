@@ -14,13 +14,7 @@ Methods
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
 
-1.RS232
-2.CAN (CAN-FD, etc.)
-3.GPIB
-4.USB
-5.UART
-6.HPIB
-7.Ethernet
+1. RS232 2. CAN (CAN-FD, etc.) 3. GPIB 4. USB 5. UART 6. HPIB 7. Ethernet
 
 Obviously, it is not possible to develop a device to encompass every existing communication protocol, so I chose three that were most necessary to our SDL and were most feasible with the constraint of a Raspberry Pi powered device. The three protocols I chose were RS232, UART, and GPIB. I chose each of these for the following reasons:
 #### UART
