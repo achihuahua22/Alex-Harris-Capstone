@@ -4,7 +4,7 @@ This repository contains all of the schematics, documentation, and code necessar
 
 Currently, this device supports UART, RS232, and GPIB*. 
 
-
+*(under construction)
 ## Introduction
 For my senior capstone project, I worked with Dr. Taylor Spark’s self-driving laboratory (SDL) to develop a device to more easily integrate laboratory equipment into an SDL. This device intends to do two things: Allow researchers to easily put information about lab equipment onto their network and save them money. To make a device “easy to use” I wanted to work with hardware that researchers are familiar with as much as possible. This led to me choosing to design a product that is attached to a single board computer such as a Raspberry Pi. Using the Raspberry Pi was the obvious choice because of its prevalence in the research space. 
 What do I mean by “integrating laboratory equipment”? A lot of laboratory equipment at a university research level has very little connection between devices either due to the age of the device or the type of communication protocol included. Another issue is that products can use proprietary connection methods, such as costly software or connectors. This makes the task of developing an interconnected SDL very difficult, especially when you are a student or researcher, or hobbyist with limited resources. 
