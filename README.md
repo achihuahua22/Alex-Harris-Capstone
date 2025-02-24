@@ -3,7 +3,7 @@
 This repository contains all of the schematics, documentation, and code necessary to build this device._
 
 Currently, this device supports UART, RS232, and GPIB*. 
-see the files [here] (Alex-Harris-Capstone/capstone_cad)
+see the files [here](Alex-Harris-Capstone/capstone_cad)
 
 *(under construction)
 
