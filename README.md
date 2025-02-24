@@ -14,13 +14,13 @@ Methods
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
 
--RS232
--CAN (CAN-FD, etc.)
--GPIB
--USB
--UART
--HPIB
--Ethernet
+1.RS232
+2.CAN (CAN-FD, etc.)
+3.GPIB
+4.USB
+5.UART
+6.HPIB
+7.Ethernet
 
 Obviously, it is not possible to develop a device to encompass every existing communication protocol, so I chose three that were most necessary to our SDL and were most feasible with the constraint of a Raspberry Pi powered device. The three protocols I chose were RS232, UART, and GPIB. I chose each of these for the following reasons:
 #### UART
@@ -30,7 +30,7 @@ I chose RS232 because it was very prevalent in older equipment such as the Fisch
 #### GPIB
 Lastly, I chose GPIB because it was also extremely prevalent in many types of laboratory equipment such as multimeters, spectrum analyzers, and other devices. The issue that many laboratories face with GPIB enabled devices is that adapters such as GPIB to USB can cost more than $1,000 and can only communicate with proprietary software. This can render perfectly usable lab equipment almost completely useless in terms of automation or remote data collection.
 
-I also want to discuss the protocols I didn’t choose.
+I also want to discuss the protocols I *didn’t* choose.
 
 #### CAN
 I didn’t choose CAN or any of its variants (CAN, CAN-FD, CAN-XL) because it has too many variants to effectively develop a multipurpose product that could encompass of CAN. The differential pair nature of CAN also makes it difficult to develop for.
