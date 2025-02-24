@@ -13,6 +13,7 @@ I want to develop a device that can put data collected by lab equipment onto the
 Methods
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
+
 -RS232
 -CAN (CAN-FD, etc.)
 -GPIB
