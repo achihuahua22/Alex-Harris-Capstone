@@ -5,6 +5,7 @@ This repository contains all of the schematics, documentation, and code necessar
 Currently, this device supports UART, RS232, and GPIB*. 
 
 *(under construction)
+
 ## Introduction
 For my senior capstone project, I worked with Dr. Taylor Spark’s self-driving laboratory (SDL) to develop a device to more easily integrate laboratory equipment into an SDL. This device intends to do two things: Allow researchers to easily put information about lab equipment onto their network and save them money. To make a device “easy to use” I wanted to work with hardware that researchers are familiar with as much as possible. This led to me choosing to design a product that is attached to a single board computer such as a Raspberry Pi. Using the Raspberry Pi was the obvious choice because of its prevalence in the research space. 
 What do I mean by “integrating laboratory equipment”? A lot of laboratory equipment at a university research level has very little connection between devices either due to the age of the device or the type of communication protocol included. Another issue is that products can use proprietary connection methods, such as costly software or connectors. This makes the task of developing an interconnected SDL very difficult, especially when you are a student or researcher, or hobbyist with limited resources. 
@@ -12,13 +13,13 @@ I want to develop a device that can put data collected by lab equipment onto the
 Methods
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
-•	RS232
-•	CAN (CAN-FD, etc.)
-•	GPIB
-•	USB
-•	UART
-•	HPIB
-•	Ethernet
+-RS232
+-CAN (CAN-FD, etc.)
+-GPIB
+-USB
+-UART
+-HPIB
+-Ethernet
 
 Obviously, it is not possible to develop a device to encompass every existing communication protocol, so I chose three that were most necessary to our SDL and were most feasible with the constraint of a Raspberry Pi powered device. The three protocols I chose were RS232, UART, and GPIB. I chose each of these for the following reasons:
 #### UART
