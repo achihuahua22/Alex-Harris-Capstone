@@ -1,0 +1,12 @@
+﻿Manufacturer #,Supplier #,References,Label,Quantity, Unit Price , Total Price ,Link
+PRT-21570, 474-PRT-21570 ,J1,"GPIO, PinSocket_2x20_P2.54mm_Vertical",1,$1.95 , $1.95 ,https://www.mouser.com/ProductDetail/SparkFun/PRT-21570?qs=dbcCsuKDzFXE3Ci1AQT/Bw%3D%3D&mgh=1&gQT=0
+22284040,WM50014-04-ND,"J4,J5","UART, PinHeader_1x04_P2.54mm_Vertical",2,$0.30 , $0.60 ,https://www.digikey.com/en/products/detail/molex/0022284040/313789
+ L77SDE09SA4CH3FC309 , 523-SDE09SA4CH3FC309 ,"J2, J3", D-Sub Standard Connectors D-SUB ,2,$2.64 , $5.28 ,https://www.mouser.com/ProductDetail/Amphenol-Commercial-Products/L77SDE09SA4CH3FC309?qs=mq7kV%2Fq8lk5ORILqzEGv%252Bw%3D%3D
+150060RS75000,732-4978-2-ND - Tape & Reel (TR),D1,LED RED CLEAR 0603 SMD,1,$0.14 , $0.14 ,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060RS75000/4489901
+150060VS75000,732-4980-2-ND,D2-D9,Green 570nm LED Indication - Discrete 2V 0603 (1608 Metric),8,$0.14 , $1.12 ,https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/150060VS75000/4489906
+RC0805FR-071KL,311-1.00KCRTR-ND,"R2-R12, R14-R18",Thick Film Resistors - SMD 0805 1Kohms 125mW 1%,16,$0.10 , $1.60 ,https://www.digikey.com/en/products/detail/yageo/RC0805FR-071KL/727444
+ERJ-6RBD1002V,667-ERJ-6RBD1002V ,"R1, R13",Thick Film Resistors - SMD 0805 10Kohms 0.5% AEC-Q200,2,$0.18 , $0.36 ,https://www.mouser.com/ProductDetail/Panasonic/ERJ-6RBD1002V?qs=18kBAoNi3c%2F5OpcgdPnLzA%3D%3D
+KAM21BR71H104JT ,581-KAM21BR71H104JT ,C1-C12,Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V .1uF X7R 0805 5% AEC-Q200,12,$0.20 , $2.40 ,https://www.mouser.com/ProductDetail/KYOCERA-AVX/KAM21BR71H104JT?qs=Jm2GQyTW%2Fbic6Zk4McEt6w%3D%3D
+MAX3232CPWR ,595-MAX3232CPWR ,"U2,U4",RS-232 Interface IC 3-5.5V Mult-Ch RS232 A 595-MAX3232CPW ,2,$0.80 , $1.60 ,https://www.mouser.com/ProductDetail/Texas-Instruments/MAX3232CPWR?qs=bkMXpVdiF40tDMAEI%2F4vWA%3D%3D
+"SC16IS752IBS,151",568-2236-ND,"U1,U5",IC UART DUAL I2C/SPI 32-HVQFN,2,$5.10 , $10.20 ,https://www.digikey.com/en/products/detail/nxp-usa-inc/SC16IS752IBS-151/946245
+,,,,,, $25.25 ,
