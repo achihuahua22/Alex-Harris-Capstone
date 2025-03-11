@@ -2,7 +2,8 @@
  _This project is a Raspberry Pi Hat that is intended to receive inputs from Self-Driving-Laboratory equipment and utilize the raspberry pi to publish device data onto the network.
 This repository contains all of the schematics, documentation, and code necessary to build this device._
 
-This project builds on an-ven’s [graspib](https://github.com/an-ven/graspib) project by adding more RS232 support and a UART breakout pin
+This project builds on an-ven’s [graspib](https://github.com/an-ven/graspib) project by adding more RS232 support and a UART breakout pin. 
+
 It also utilizes the [Linux GPIB package](https://linux-gpib.sourceforge.io)
 
 Currently, this device supports UART, RS232, and GPIB. 
