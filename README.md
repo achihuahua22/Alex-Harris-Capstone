@@ -2,9 +2,10 @@
  _This project is a Raspberry Pi Hat that intends to receive inputs from Self-Driving-Laboratory equipment and automatically publish device data onto the network.
 This repository contains all of the schematics, documentation, and code necessary to build this device._
 
-
+This project builds on an-ven’s [graspib](https://github.com/an-ven/graspib) project by adding more RS232 support and a UART breakout pin
 
 Currently, this device supports UART, RS232, and GPIB. 
+
 
 If you want to make one yourself, the files are [here](capstone_cad_rev3)
 
@@ -48,3 +49,36 @@ I didn’t choose USB because of its complication with drivers, enumeration, hos
 I didn’t choose HPIB because of the general nature of GPIB (General Purpose Interface Bus) HPIB is limited to Hewlett-Packard devices, and that does not make sense with the intent of this project.
 #### _Ethernet_
 I didn’t choose Ethernet because it also defeats the purpose of this project. The Raspberry Pi used for this project has Ethernet connection capabilities, allowing me to develop a device that just handles the communications between the laboratory equipment and the Pi, reducing cost and complexity.
+
+## Setup
+1. Setup fresh install of raspberry pi os
+2. Configure your network, password, etc
+3. Run the following in the raspberry pi os terminal:
+ ```
+# Update package list
+sudo apt update
+   
+# Install WiringPi
+sudo apt install wiringpi
+  
+# Install standard C library development files
+sudo apt install libc6-dev
+ 
+# Install build tools
+sudo apt install build-essential
+
+# Compile the program
+gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi
+
+# Run the program
+sudo ./serial_i2c_network
+```
+4. See following instructions from grasPIB repository
+https://github.com/an-ven/graspib/tree/main
+
+5. Download Provided files from github repository.
+-	send_to_network.c
+6. Configure Baud rate, IP, and I2C addresses
+
+
+
