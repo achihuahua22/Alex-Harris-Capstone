@@ -6,7 +6,7 @@ This project builds on an-ven’s [graspib](https://github.com/an-ven/graspib) p
 
 Currently, this device supports UART, RS232, and GPIB. 
 
-[3d model of pcb](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/capstone_rev3_3d_screenshot.png)
+![3d model of pcb](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/capstone_rev3_3d_screenshot.png)
 
 If you want to make one yourself, the files are [here](capstone_cad_rev3)
 
