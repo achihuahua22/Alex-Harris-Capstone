@@ -58,30 +58,31 @@ I didn’t choose Ethernet because it also defeats the purpose of this project. 
 1. Setup fresh install of raspberry pi os
 2. Configure your network, password, etc
 3. Run the following in the raspberry pi os terminal:
- ```
+
 # Update package list
-sudo apt update
+```sudo apt update```
    
 # Install WiringPi
-sudo apt install wiringpi
+```sudo apt install wiringpi```
   
 # Install standard C library development files
-sudo apt install libc6-dev
+```sudo apt install libc6-dev```
  
 # Install build tools
-sudo apt install build-essential
+```sudo apt install build-essential```
 
 # Compile the program
-gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi
+```gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi```
 
 # Run the program
-sudo ./serial_i2c_network
-```
-4. See following instructions from grasPIB repository
+```sudo ./serial_i2c_network```
+
+4. See following instructions from grasPIB repository to configure the raspberry pi for GPIB
 https://github.com/an-ven/graspib/tree/main
 
 5. Download Provided files from github repository.
--	send_to_network.c
+   send_to_network.c
+  
 6. Configure Baud rate, IP, and I2C addresses
 
 
