@@ -53,37 +53,45 @@ I didn’t choose USB because of its complication with drivers, enumeration, hos
 I didn’t choose HPIB because of the general nature of GPIB (General Purpose Interface Bus) and how HPIB is limited to Hewlett-Packard devices, and that does not make sense with the intent of this project.
 #### _Ethernet_
 I didn’t choose Ethernet because it also defeats the purpose of this project. The Raspberry Pi used for this project has Ethernet connection capabilities, allowing me to develop a device that just handles the communications between the laboratory equipment and the Pi, reducing cost and complexity.
+## Device Assembly
 
-## Setup
-1. Setup fresh install of raspberry pi os
-2. Configure your network, password, etc
-3. Run the following in the raspberry pi os terminal:
+### Parts
+Here is the [BOM](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/bill_of_materials/senior_capstone_bom_rev3.csv) for the pcb components
+   - Unfortunately, all of the components except for one can be purchased from Digikey, the remaining component can be purchased from Mouser
+   - In addition, I would recommend M2.5 standoffs to support the board on top of the raspberry pi
+### PCB
+Here are the [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone/tree/main/capstone_rev3_gerbers) to order the PCB. I would recommend JLCPCB as their prices are very reasonable for 5 boards. The only downside is shipping can take time if you don't pay for rush shipping.
 
-# Update package list
-```sudo apt update```
+### Building
+I would recommend using solder paste and a heat gun for installing the small surface mount components such as the resistors, capacitors, and LED's and installing the components in the following order:
+1. Resistors
+2. Capacitors
+3. LED's *pay attention to the orientation of the LED*
+4. Integrated Circuits
+5. Connectors
+
+It is not required to install the components in this order, but is is easier to install the smaller components first so you don't have to navigate around the large connectors.
    
-# Install WiringPi
-```sudo apt install wiringpi```
+## Setup
+1. Setup fresh install of [raspberry pi os](https://www.raspberrypi.com/software/)
+2. Configure your network, password, etc to your liking
+3. Download Provided [files](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c) to send data to network
+4. Run the following in the raspberry pi os terminal to configure serial and i2c:
+   
+   - Update package list ```sudo apt update```
+     
+   - Install WiringPi ```sudo apt install wiringpi```
+    
+   - Install standard C library development files ```sudo apt install libc6-dev```
+   
+   - Install build tools ```sudo apt install build-essential```
+
+5. See following [instructions](https://github.com/an-ven/graspib/tree/main) from grasPIB repository to configure the raspberry pi for GPIB
+6. Configure Baud rate, IP, and I2C addresses in code
+7. Run the following to start the program:
+   - Compile the program ```gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi```
   
-# Install standard C library development files
-```sudo apt install libc6-dev```
- 
-# Install build tools
-```sudo apt install build-essential```
-
-# Compile the program
-```gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi```
-
-# Run the program
-```sudo ./serial_i2c_network```
-
-4. See following instructions from grasPIB repository to configure the raspberry pi for GPIB
-https://github.com/an-ven/graspib/tree/main
-
-5. Download Provided files from github repository.
-   [C code to publish to network] (https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c)
-  
-6. Configure Baud rate, IP, and I2C addresses
+   - Run the program ```sudo ./serial_i2c_network```
 
 
 
