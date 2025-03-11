@@ -81,7 +81,7 @@ I didn’t choose Ethernet because it also defeats the purpose of this project. 
 https://github.com/an-ven/graspib/tree/main
 
 5. Download Provided files from github repository.
-   send_to_network.c
+   [C code to publish to network] (https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c)
   
 6. Configure Baud rate, IP, and I2C addresses
 
