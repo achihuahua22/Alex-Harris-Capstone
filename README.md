@@ -2,14 +2,15 @@
  _This project is a Raspberry Pi Hat that intends to receive inputs from Self-Driving-Laboratory equipment and automatically publish device data onto the network.
 This repository contains all of the schematics, documentation, and code necessary to build this device._
 
-Currently, this device supports UART, RS232, and GPIB*. 
+
+
+Currently, this device supports UART, RS232, and GPIB. 
 
 If you want to make one yourself, the files are [here](capstone_cad_rev3)
 
 
 
 
-*(under construction)
 
 ## Introduction
   For my senior capstone project, I worked with Dr. Taylor Spark’s self-driving laboratory (SDL) to develop a device to more easily integrate laboratory equipment into an SDL. This device intends to do two things: Allow researchers to easily put information about lab equipment onto their network and save them money. To make a device “easy to use” I wanted to work with hardware that researchers are familiar with as much as possible. This led to me choosing to design a product that is attached to a single board computer such as a Raspberry Pi. Using the Raspberry Pi was the obvious choice because of its prevalence in the research space. 
