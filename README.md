@@ -66,7 +66,7 @@ Here are the [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone
 I would recommend using solder paste and a heat gun for installing the small surface mount components such as the resistors, capacitors, and LED's and installing the components in the following order:
 1. Resistors
 2. Capacitors
-3. LED's *pay attention to the orientation of the LED*
+3. LED's (*pay attention to the orientation of the LED!*)
 4. Integrated Circuits
 5. Connectors
 
