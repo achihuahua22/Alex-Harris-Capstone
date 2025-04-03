@@ -14,15 +14,18 @@ If you want to make one yourself, the files are [here](capstone_cad_rev3)
 
 
 
-
-
 ## Introduction
   For my senior capstone project, I worked with Dr. Taylor Sparks' self-driving laboratory (SDL) to develop a device to more easily integrate laboratory equipment into an SDL. This device intends to do two things: Allow researchers to easily put information about lab equipment onto their network and save them money. To make a device “easy to use” I wanted to work with hardware that researchers are familiar with as much as possible. This led to me choosing to design a product that is attached to a single board computer such as a Raspberry Pi. Using the Raspberry Pi was the obvious choice because of its prevalence in the research space. 
 
   What do I mean by “integrating laboratory equipment”? A lot of laboratory equipment at a university research level has very little connection between devices either due to the age of the device or the type of communication protocol included. Another issue is that products can use proprietary connection methods, such as costly software or connectors. This makes the task of developing an interconnected SDL very difficult, especially when you are a student, researcher, or hobbyist with limited resources. 
 
   I want to develop a device that can put data collected by lab equipment onto the network using a Raspberry Pi and HAT, or a PCB that sits on top of the Pi to handle the communications. The Pi will have an ethernet connection to the network, allowing the user to program it to either send data to a network address or something like a ROS network, depending on their needs.
-  
+
+So what is this device actually doing? 
+One feature is that it merges the two RS232 inputs into a single I2C bus, allowing the user to read data from two ports using one pair of wires.
+Second, the device uses the Raspberry Pi's GPIO pins to interface with a GPIB device by "bit banging" or setting GPIO pins in software instead of hardware communicating over GPIB
+Third, there is a passthrough breakout serial input with status lights to monitor activity.
+
 ## Design
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
@@ -53,6 +56,8 @@ I didn’t choose USB because of its complication with drivers, enumeration, hos
 I didn’t choose HPIB because of the general nature of GPIB (General Purpose Interface Bus) and how HPIB is limited to Hewlett-Packard devices, and that does not make sense with the intent of this project.
 #### _Ethernet_
 I didn’t choose Ethernet because it also defeats the purpose of this project. The Raspberry Pi used for this project has Ethernet connection capabilities, allowing me to develop a device that just handles the communications between the laboratory equipment and the Pi, reducing cost and complexity.
+
+
 ## Device Assembly
 
 ### Parts
@@ -67,8 +72,9 @@ I would recommend using solder paste and a heat gun for installing the small sur
 1. Resistors
 2. Capacitors
 3. LED's (*pay attention to the orientation of the LED!*)
-4. Integrated Circuits
-5. Connectors
+   - The open part of the rectangle is the anode, the closed part is the cathode
+5. Integrated Circuits
+6. Connectors
 
 It is not required to install the components in this order, but is is easier to install the smaller components first so you don't have to navigate around the large connectors.
    
@@ -79,11 +85,9 @@ It is not required to install the components in this order, but is is easier to 
 4. Run the following in the raspberry pi os terminal to configure serial and i2c:
    
    - Update package list ```sudo apt update```
-     
+   - Install socket ```python3 -m pip install socket```
+   - Install pySerial ```python3 -m pip install pyserial```
    - Install WiringPi ```sudo apt install wiringpi```
-    
-   - Install standard C library development files ```sudo apt install libc6-dev```
-   
    - Install build tools ```sudo apt install build-essential```
 
 5. See following [instructions](https://github.com/an-ven/graspib/tree/main) from grasPIB repository to configure the raspberry pi for GPIB
