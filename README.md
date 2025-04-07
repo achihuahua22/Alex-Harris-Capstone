@@ -92,10 +92,7 @@ It is not required to install the components in this order, but is is easier to 
 
 5. See following [instructions](https://github.com/an-ven/graspib/tree/main) from grasPIB repository to configure the raspberry pi for GPIB
 6. Configure Baud rate, IP, and I2C addresses in code
-7. Run the following to start the program:
-   - Compile the program ```gcc -o serial_i2c_network serial_i2c_network.c -lwiringPi```
-  
-   - Run the program ```sudo ./serial_i2c_network```
+
 
 
 
