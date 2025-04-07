@@ -59,13 +59,15 @@ I didn’t choose Ethernet because it also defeats the purpose of this project. 
 
 
 ## Device Assembly
+### PCB Manufacturing
+At the time of writing, JLCPCB is a very good option for low cost PCB manufacturing. You can get 5 boards for roughly $4 not including shipping. All you need to do is zip these [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone/tree/main/capstone_rev4_gerbers), go to JLCPCB.com, click "upload gerbers" and choose the zipped file. Everything else should populate automatically. You don't need to do any configuration besides choosing the "Lead Free HASL". Feel free to order a stencil as it might make surface mount soldering easier, not required though.
 
 ### Parts
 Here is the [BOM](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/bill_of_materials/senior_capstone_bom_rev3.csv) for the pcb components
    - Unfortunately, all of the components except for one can be purchased from Digikey, the remaining component can be purchased from Mouser
    - In addition, I would recommend M2.5 standoffs to support the board on top of the raspberry pi
 ### PCB
-Here are the [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone/tree/main/capstone_rev3_gerbers) to order the PCB. I would recommend JLCPCB as their prices are very reasonable for 5 boards. The only downside is shipping can take time if you don't pay for rush shipping.
+Here are the [ to order the PCB. I would recommend JLCPCB as their prices are very reasonable for 5 boards. The only downside is shipping can take time if you don't pay for rush shipping.
 
 ### Building
 I would recommend using solder paste and a heat gun for installing the small surface mount components such as the resistors, capacitors, and LED's and installing the components in the following order:
