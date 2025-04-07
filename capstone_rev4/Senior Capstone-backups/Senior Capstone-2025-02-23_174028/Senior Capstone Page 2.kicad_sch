@@ -1,0 +1,2741 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6abba27c-37c6-42ea-aed8-569ae5b082f9")
+	(paper "A4")
+	(lib_symbols
+		(symbol "SS-52000-003:SS-52000-003"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -10.16 18.542 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "SS-52000-003"
+				(at -10.16 -17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "SS-52000-003:STEWART_SS-52000-003"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Bel Fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MAXIMUM_PACKAGE_HEIGHT" "16.00mm"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer Recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "PARTREV" "A0"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "SS-52000-003"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\n                        \n                            USB 3.0 - A Connector | 2 Port | Stacked Right Angle Receptacle | Shielded\n                        \n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "Stewart Connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "SS-52000-003_1_0"
+				(rectangle
+					(start -10.16 -15.24)
+					(end 10.16 17.78)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -15.24 15.24 0)
+					(length 5.08)
+					(name "VBUS_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 12.7 0)
+					(length 5.08)
+					(name "D-_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 10.16 0)
+					(length 5.08)
+					(name "D+_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 7.62 0)
+					(length 5.08)
+					(name "GND_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 2.54 0)
+					(length 5.08)
+					(name "SSRX-_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "SSRX+_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "GND_DRAIN_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "SSTX-_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "SSTX+_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -12.7 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -12.7 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -12.7 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -15.24 -12.7 0)
+					(length 5.08)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "SH4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SS-52000-003_2_0"
+				(rectangle
+					(start -10.16 -12.7)
+					(end 10.16 15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -15.24 12.7 0)
+					(length 5.08)
+					(name "VBUS_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 10.16 0)
+					(length 5.08)
+					(name "D-_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 7.62 0)
+					(length 5.08)
+					(name "D+_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 5.08 0)
+					(length 5.08)
+					(name "GND_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 0 0)
+					(length 5.08)
+					(name "SSRX-_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -2.54 0)
+					(length 5.08)
+					(name "SSRX+_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -5.08 0)
+					(length 5.08)
+					(name "GND_DRAIN_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -7.62 0)
+					(length 5.08)
+					(name "SSTX-_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -15.24 -10.16 0)
+					(length 5.08)
+					(name "SSTX+_2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TUSB8041RGCR:TUSB8041RGCR"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -35.56 67.04 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "TUSB8041RGCR"
+				(at -35.56 -70.04 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "TUSB8041RGCR:QFN50P900X900X100-65N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MF" "Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "\n                        \n                            4-port 5-Gbps SuperSpeed USB 3.0 hub\n                        \n"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Package" "QFN-64 Texas Instruments"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TUSB8041RGCR/Texas+Instruments/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "TUSB8041RGCR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "In Stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/TUSB8041RGCR/Texas+Instruments/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "TUSB8041RGCR_0_0"
+				(rectangle
+					(start -35.56 -66.04)
+					(end 35.56 66.04)
+					(stroke
+						(width 0.41)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -48.26 0)
+					(length 5.08)
+					(name "USB_DP_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -38.1 0)
+					(length 5.08)
+					(name "USB_DM_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 40.64 180)
+					(length 5.08)
+					(name "USB_SSTXP_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 53.34 180)
+					(length 5.08)
+					(name "USB_SSTXM_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 20.32 0)
+					(length 5.08)
+					(name "USB_SSRXP_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 33.02 0)
+					(length 5.08)
+					(name "USB_SSRXM_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 60.96 180)
+					(length 5.08)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -48.26 180)
+					(length 5.08)
+					(name "USB_DP_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -35.56 180)
+					(length 5.08)
+					(name "USB_DM_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 38.1 180)
+					(length 5.08)
+					(name "USB_SSTXP_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -35.56 0)
+					(length 5.08)
+					(name "USB_DM_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 50.8 180)
+					(length 5.08)
+					(name "USB_SSTXM_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 17.78 0)
+					(length 5.08)
+					(name "USB_SSRXP_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 30.48 0)
+					(length 5.08)
+					(name "USB_SSRXM_DN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -50.8 180)
+					(length 5.08)
+					(name "USB_DP_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -38.1 180)
+					(length 5.08)
+					(name "USB_DM_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 35.56 180)
+					(length 5.08)
+					(name "USB_SSTXP_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 48.26 180)
+					(length 5.08)
+					(name "USB_SSTXM_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 15.24 0)
+					(length 5.08)
+					(name "USB_SSRXP_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 43.18 180)
+					(length 5.08)
+					(name "USB_SSTXP_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 27.94 0)
+					(length 5.08)
+					(name "USB_SSRXM_DN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -15.24 180)
+					(length 5.08)
+					(name "PWRCTL4/BATEN4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 40.64 -12.7 180)
+					(length 5.08)
+					(name "PWRCTL3/BATEN3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 60.96 180)
+					(length 5.08)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -15.24 0)
+					(length 5.08)
+					(name "PWRCTL2/BATEN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -12.7 0)
+					(length 5.08)
+					(name "PWRCTL1/BATEN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -25.4 0)
+					(length 5.08)
+					(name "SDA/SMBDAT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -40.64 43.18 0)
+					(length 5.08)
+					(name "SCL/SMBCLK"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -30.48 0)
+					(length 5.08)
+					(name "SMBUSZ/SS_SUSPEND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 55.88 180)
+					(length 5.08)
+					(name "USB_SSTXM_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -2.54 0)
+					(length 5.08)
+					(name "FULLPWRMGMTZ/SMBA1/SS_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -20.32 0)
+					(length 5.08)
+					(name "PWRCTL_POL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -7.62 0)
+					(length 5.08)
+					(name "GANGED/SMBA2/HS_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 45.72 0)
+					(length 5.08)
+					(name "OVERCUR4Z"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 48.26 0)
+					(length 5.08)
+					(name "OVERCUR3Z"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 2.54 0)
+					(length 5.08)
+					(name "AUTOENZ/HS_SUSPEND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 53.34 0)
+					(length 5.08)
+					(name "OVERCUR1Z"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 50.8 0)
+					(length 5.08)
+					(name "OVERCUR2Z"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 10.16 0)
+					(length 5.08)
+					(name "USB_VBUS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 40.64 0)
+					(length 5.08)
+					(name "TEST"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 55.88 0)
+					(length 5.08)
+					(name "GRSTZ"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "50"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "51"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 60.96 180)
+					(length 5.08)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "52"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -55.88 0)
+					(length 5.08)
+					(name "USB_DP_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "53"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -43.18 0)
+					(length 5.08)
+					(name "USB_DM_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "54"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 33.02 180)
+					(length 5.08)
+					(name "USB_SSTXP_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "55"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 45.72 180)
+					(length 5.08)
+					(name "USB_SSTXM_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "56"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "57"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 12.7 0)
+					(length 5.08)
+					(name "USB_SSRXP_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "58"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 25.4 0)
+					(length 5.08)
+					(name "USB_SSRXM_UP"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "59"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 22.86 0)
+					(length 5.08)
+					(name "USB_SSRXP_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 40.64 30.48 180)
+					(length 5.08)
+					(name "XO"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "61"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 7.62 0)
+					(length 5.08)
+					(name "XI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "62"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 60.96 180)
+					(length 5.08)
+					(name "VDD33"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "63"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 38.1 0)
+					(length 5.08)
+					(name "USB_R1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "64"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 -58.42 180)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "65"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -40.64 35.56 0)
+					(length 5.08)
+					(name "USB_SSRXM_DN1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 40.64 63.5 180)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -40.64 -50.8 0)
+					(length 5.08)
+					(name "USB_DP_DN2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TUSB8041RGCR:TUSB8041RGCR")
+		(at 194.31 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7149415f-c6c3-4a09-be15-67c92be57a3c")
+		(property "Reference" "U3"
+			(at 194.31 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TUSB8041RGCR"
+			(at 194.31 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TUSB8041RGCR:QFN50P900X900X100-65N"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Texas Instruments"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            4-port 5-Gbps SuperSpeed USB 3.0 hub\n                        \n"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "QFN-64 Texas Instruments"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TUSB8041RGCR/Texas+Instruments/view-part/?ref=snap"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "TUSB8041RGCR"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/TUSB8041RGCR/Texas+Instruments/view-part/?ref=eda"
+			(at 194.31 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "26"
+			(uuid "3ffbcd96-5750-46b6-8ceb-763fcd3db1a2")
+		)
+		(pin "28"
+			(uuid "81ea5007-9ca9-4f7a-bbe8-43261d403844")
+		)
+		(pin "65"
+			(uuid "fbd49c78-e28b-474b-8101-e26828fd53c0")
+		)
+		(pin "7"
+			(uuid "414b361d-1ca5-42d0-bc37-3b47c38bae44")
+		)
+		(pin "27"
+			(uuid "d9428fc6-6e85-4d49-b03a-b7950b5e192d")
+		)
+		(pin "8"
+			(uuid "65a6586f-5e12-418d-9622-944fa1bb6edb")
+		)
+		(pin "21"
+			(uuid "10b10f43-dfb3-4a80-a8c4-bfaf1c09907e")
+		)
+		(pin "37"
+			(uuid "38919efa-d9d6-4307-876c-0469e07e6d15")
+		)
+		(pin "4"
+			(uuid "284e8d31-2865-4c3c-95a9-aea0a7799012")
+		)
+		(pin "20"
+			(uuid "9a40425f-eb47-44a5-b407-81c977b2d3be")
+		)
+		(pin "9"
+			(uuid "4feea436-67d1-4adf-9d8f-b1d029af9a38")
+		)
+		(pin "44"
+			(uuid "25d7269a-00ff-48b9-8b99-0522a9d23963")
+		)
+		(pin "2"
+			(uuid "ca30dc70-ec5a-4588-b733-87d86c88fb76")
+		)
+		(pin "46"
+			(uuid "4b8f6472-7821-4120-af75-59a818aa1aec")
+		)
+		(pin "52"
+			(uuid "a8c81490-179b-41be-a1fb-03c249ba101c")
+		)
+		(pin "17"
+			(uuid "ce2ccdf6-7f9a-4fe5-97c0-fb34b2dd6c36")
+		)
+		(pin "48"
+			(uuid "479cb3f9-055b-4dbe-b9bd-e63ef51327c3")
+		)
+		(pin "12"
+			(uuid "d2fd1f63-2885-4be0-8707-a20e96c632b8")
+		)
+		(pin "25"
+			(uuid "2cfc3f48-78ea-4675-a19a-4fcd92394e8d")
+		)
+		(pin "35"
+			(uuid "68c73a6c-62a4-4eb5-a5ea-7867f02aca4b")
+		)
+		(pin "31"
+			(uuid "d279f59b-4058-41ad-b03e-10b88966216f")
+		)
+		(pin "45"
+			(uuid "edfb9907-1018-44fe-93cd-123e2c4790fb")
+		)
+		(pin "47"
+			(uuid "bd06cee4-3a4d-4c4d-8b24-1e321dcc220f")
+		)
+		(pin "49"
+			(uuid "4e35d01c-3ac8-42b3-a601-2cd59088c3e0")
+		)
+		(pin "51"
+			(uuid "c4cb2c9e-25b9-46ec-9020-759edbeff299")
+		)
+		(pin "13"
+			(uuid "3f2d3624-ee47-40c2-9784-3530dde3de31")
+		)
+		(pin "54"
+			(uuid "0bbcac28-967b-4979-a72b-805fa971c5e0")
+		)
+		(pin "55"
+			(uuid "60011ba2-0b00-4b60-b028-a29e95c1c672")
+		)
+		(pin "50"
+			(uuid "9a93de41-c6f5-4ab9-b1e4-bcbf7cec159e")
+		)
+		(pin "53"
+			(uuid "0c9cc2f9-e449-403d-80b2-f5fb48381e50")
+		)
+		(pin "18"
+			(uuid "69e4f880-fd27-428c-9417-d23de4ce63e9")
+		)
+		(pin "30"
+			(uuid "4c386324-844a-4a3e-84a6-de03620bbbdb")
+		)
+		(pin "33"
+			(uuid "f691a846-6ed5-4702-b6c0-77b451c0ddd1")
+		)
+		(pin "40"
+			(uuid "e280e7aa-7dc8-4dd2-8ca7-a4543071a7a9")
+		)
+		(pin "58"
+			(uuid "0da5763d-40ff-42be-9d4b-318a55106b28")
+		)
+		(pin "11"
+			(uuid "0ef32cf2-e5d6-436a-b5ee-ba59e55c4383")
+		)
+		(pin "1"
+			(uuid "3cb91a88-811a-4225-859f-34d833ff08db")
+		)
+		(pin "14"
+			(uuid "5320872b-b889-4158-9efd-684cd6540822")
+		)
+		(pin "15"
+			(uuid "db1a078a-7e2e-497b-a5aa-466096f6b18c")
+		)
+		(pin "24"
+			(uuid "514237a4-6871-4c2c-8ec4-a2b0e3f6509a")
+		)
+		(pin "32"
+			(uuid "ca828480-c8b2-40a9-a8a7-d368b4ee4c2f")
+		)
+		(pin "36"
+			(uuid "adbff184-f809-4a41-b2f5-a79a5c6ed313")
+		)
+		(pin "38"
+			(uuid "02089c9b-832a-452c-9ee8-059ee4f81ff8")
+		)
+		(pin "39"
+			(uuid "42038b78-cc8c-45b3-b65c-4560a841ce71")
+		)
+		(pin "41"
+			(uuid "fcc66c3f-4a51-4ba9-88fc-6f4911114a42")
+		)
+		(pin "43"
+			(uuid "d41c1ce6-c390-4752-bd6e-d6c6b7b45f64")
+		)
+		(pin "22"
+			(uuid "187c7742-a355-4ede-a796-8fa3f0f8fa3e")
+		)
+		(pin "42"
+			(uuid "0b849692-994a-46aa-84c8-b44bf71e19dd")
+		)
+		(pin "57"
+			(uuid "ab78c3a3-190d-4667-ad4c-99840fd9ebf9")
+		)
+		(pin "59"
+			(uuid "05ddee03-61c6-421a-ac77-159a232d5929")
+		)
+		(pin "5"
+			(uuid "64eacc90-275a-41e0-bdd7-e26fb5a18ff6")
+		)
+		(pin "6"
+			(uuid "2d1decba-ba3c-4482-afec-581ada11099f")
+		)
+		(pin "3"
+			(uuid "85d22b64-021f-4fc7-a3ec-568407076e2c")
+		)
+		(pin "61"
+			(uuid "807a7666-5cfb-4b2a-8e33-9b548c430981")
+		)
+		(pin "62"
+			(uuid "8975a48a-59ed-40f7-a92d-e710df0a6845")
+		)
+		(pin "10"
+			(uuid "1c751aee-bbdd-481e-8fdf-08444449b05e")
+		)
+		(pin "63"
+			(uuid "9c5f7c1f-9df3-4efa-8fcf-b80c267e5c31")
+		)
+		(pin "29"
+			(uuid "63234862-b854-4547-9371-ccce0f05e130")
+		)
+		(pin "34"
+			(uuid "c5f941a3-ec98-4808-9725-fa8d2e6af7aa")
+		)
+		(pin "19"
+			(uuid "73808cf5-6863-4db9-ae9f-f447ef31f7d0")
+		)
+		(pin "23"
+			(uuid "17c3085c-8149-444f-9d2b-1d1281ae956a")
+		)
+		(pin "56"
+			(uuid "6b96d96e-37ef-478b-908e-356cb3b032f3")
+		)
+		(pin "16"
+			(uuid "59e97933-95f0-46bf-8da8-b716d2c93800")
+		)
+		(pin "64"
+			(uuid "e23a7098-1876-4c06-a638-550c62a47f7f")
+		)
+		(instances
+			(project ""
+				(path "/b707facc-fc6b-41d9-a2bb-34d7e480e1aa/7280adbf-6d22-4d75-a9d2-01331363cf44"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SS-52000-003:SS-52000-003")
+		(at 95.25 35.56 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4024e4c-feb4-4c06-b915-89076e43c81b")
+		(property "Reference" "J7"
+			(at 83.82 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS-52000-003"
+			(at 83.82 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SS-52000-003:STEWART_SS-52000-003"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Bel Fuse"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "16.00mm"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=eda"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A0"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=snap"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SS-52000-003"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            USB 3.0 - A Connector | 2 Port | Stacked Right Angle Receptacle | Shielded\n                        \n"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Stewart Connector"
+			(at 95.25 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "16"
+			(uuid "5042e4c6-cd36-47d5-b3dd-3448e04c675d")
+		)
+		(pin "2"
+			(uuid "72dc6a4a-2f14-4873-9a32-19af8c77c28f")
+		)
+		(pin "6"
+			(uuid "fe5cdade-585e-4574-bf61-64bd85d0a361")
+		)
+		(pin "13"
+			(uuid "fbff0d03-57ee-4f53-95a8-c827fcb2ce80")
+		)
+		(pin "5"
+			(uuid "285df926-d15a-4564-be7c-ac8b25f26f25")
+		)
+		(pin "3"
+			(uuid "11783a4f-2b51-4b3e-abcd-c3ced221eef2")
+		)
+		(pin "9"
+			(uuid "0b60db53-87a6-4e5b-9b0d-41b2c9920422")
+		)
+		(pin "8"
+			(uuid "253f4f3e-ee02-4a65-9e90-e0540d45d06b")
+		)
+		(pin "15"
+			(uuid "d0762d6c-d2b9-414f-9267-ee8273ef2c71")
+		)
+		(pin "4"
+			(uuid "bb80e810-9ee5-4538-839b-d0f3f0438ff0")
+		)
+		(pin "7"
+			(uuid "dddbbb99-4612-49e3-beb8-1e14939a38a0")
+		)
+		(pin "SH1"
+			(uuid "666b9cdb-847a-48ca-819a-62625f88e7d3")
+		)
+		(pin "12"
+			(uuid "38d86368-dcdd-4b06-9788-fde55e3b13b3")
+		)
+		(pin "11"
+			(uuid "2c0d3cf5-3adc-4085-a3b4-3fe1d37d6b28")
+		)
+		(pin "18"
+			(uuid "c7b8b0b3-9f54-4163-a504-c9f5365ea54f")
+		)
+		(pin "10"
+			(uuid "94571ac6-cdfe-4cd1-a767-bcdcd8d49df2")
+		)
+		(pin "14"
+			(uuid "7a520788-f85b-45c0-be72-d67c09b12397")
+		)
+		(pin "SH4"
+			(uuid "4428cea6-4f77-40d3-97d2-06b59f8ee797")
+		)
+		(pin "17"
+			(uuid "332d0414-e9bd-4e35-aa89-2cfd276aad52")
+		)
+		(pin "1"
+			(uuid "7984e8aa-7d6f-49e8-9f9e-15811359cf46")
+		)
+		(pin "SH3"
+			(uuid "223139b7-a655-48be-a143-0ee85dc59a34")
+		)
+		(pin "SH2"
+			(uuid "852af812-2656-412e-831d-52480071d6fa")
+		)
+		(instances
+			(project ""
+				(path "/b707facc-fc6b-41d9-a2bb-34d7e480e1aa/7280adbf-6d22-4d75-a9d2-01331363cf44"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SS-52000-003:SS-52000-003")
+		(at 95.25 78.74 0)
+		(mirror y)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fc8b05af-27dd-420f-8321-50fbab8de10b")
+		(property "Reference" "J7"
+			(at 83.82 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS-52000-003"
+			(at 83.82 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SS-52000-003:STEWART_SS-52000-003"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "Bel Fuse"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "16.00mm"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=eda"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "A0"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/SS-52000-003/Bel+Circuit+Protection/view-part/?ref=snap"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "SS-52000-003"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "\n                        \n                            USB 3.0 - A Connector | 2 Port | Stacked Right Angle Receptacle | Shielded\n                        \n"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "Stewart Connector"
+			(at 95.25 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "16"
+			(uuid "5042e4c6-cd36-47d5-b3dd-3448e04c675e")
+		)
+		(pin "2"
+			(uuid "72dc6a4a-2f14-4873-9a32-19af8c77c290")
+		)
+		(pin "6"
+			(uuid "fe5cdade-585e-4574-bf61-64bd85d0a362")
+		)
+		(pin "13"
+			(uuid "fbff0d03-57ee-4f53-95a8-c827fcb2ce81")
+		)
+		(pin "5"
+			(uuid "285df926-d15a-4564-be7c-ac8b25f26f26")
+		)
+		(pin "3"
+			(uuid "11783a4f-2b51-4b3e-abcd-c3ced221eef3")
+		)
+		(pin "9"
+			(uuid "0b60db53-87a6-4e5b-9b0d-41b2c9920423")
+		)
+		(pin "8"
+			(uuid "253f4f3e-ee02-4a65-9e90-e0540d45d06c")
+		)
+		(pin "15"
+			(uuid "d0762d6c-d2b9-414f-9267-ee8273ef2c72")
+		)
+		(pin "4"
+			(uuid "bb80e810-9ee5-4538-839b-d0f3f0438ff1")
+		)
+		(pin "7"
+			(uuid "dddbbb99-4612-49e3-beb8-1e14939a38a1")
+		)
+		(pin "SH1"
+			(uuid "666b9cdb-847a-48ca-819a-62625f88e7d4")
+		)
+		(pin "12"
+			(uuid "38d86368-dcdd-4b06-9788-fde55e3b13b4")
+		)
+		(pin "11"
+			(uuid "2c0d3cf5-3adc-4085-a3b4-3fe1d37d6b29")
+		)
+		(pin "18"
+			(uuid "c7b8b0b3-9f54-4163-a504-c9f5365ea550")
+		)
+		(pin "10"
+			(uuid "94571ac6-cdfe-4cd1-a767-bcdcd8d49df3")
+		)
+		(pin "14"
+			(uuid "7a520788-f85b-45c0-be72-d67c09b12398")
+		)
+		(pin "SH4"
+			(uuid "4428cea6-4f77-40d3-97d2-06b59f8ee798")
+		)
+		(pin "17"
+			(uuid "332d0414-e9bd-4e35-aa89-2cfd276aad53")
+		)
+		(pin "1"
+			(uuid "7984e8aa-7d6f-49e8-9f9e-15811359cf47")
+		)
+		(pin "SH3"
+			(uuid "223139b7-a655-48be-a143-0ee85dc59a35")
+		)
+		(pin "SH2"
+			(uuid "852af812-2656-412e-831d-52480071d6fb")
+		)
+		(instances
+			(project ""
+				(path "/b707facc-fc6b-41d9-a2bb-34d7e480e1aa/7280adbf-6d22-4d75-a9d2-01331363cf44"
+					(reference "J7")
+					(unit 2)
+				)
+			)
+		)
+	)
+)

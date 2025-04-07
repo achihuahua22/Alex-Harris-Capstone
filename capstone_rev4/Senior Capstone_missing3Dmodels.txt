@@ -1,0 +1,12 @@
+### Missing 3D models - created on 2025-03-08 14:37
+### Printed by checking_3D_models plugin
+Board file: C:\Users\achih\Documents\KiCad\9.0\projects\capstone cad rev3 gpib reroute (2)\capstone cad rev3 gpib reroute\capstone cad rev3\capstone cad\Senior Capstone.kicad_pcb
+3D missing models written to:
+C:\Users\achih\Documents\KiCad\9.0\projects\capstone cad rev3 gpib reroute (2)\capstone cad rev3 gpib reroute\capstone cad rev3\capstone cad\Senior Capstone_missing3Dmodels.txt
+-------
+('U1', '${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.wrl')
+('J4', '${KICAD8_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl')
+('J1', '${KICAD8_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.wrl')
+-------
+NUM of 3D missing models:3
+checked extensions ['.stp', '.step', '.stpZ']
