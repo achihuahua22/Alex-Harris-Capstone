@@ -1,4 +1,4 @@
-# Alex-Harris-Capstone
+# Alex Harris Capstone: Low Cost Device for Laboratory Equipment Integration
  _This project is a Raspberry Pi Hat that is intended to receive inputs from Self-Driving-Laboratory equipment and utilize the raspberry pi to publish device data onto the network.
 This repository contains all of the schematics, documentation, and code necessary to build this device._
 
@@ -8,7 +8,7 @@ It also utilizes the [Linux GPIB package](https://linux-gpib.sourceforge.io)
 
 Currently, this device supports UART, RS232, and GPIB. 
 
-![3d model of pcb](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/capstone_rev3_3d_screenshot.png)
+![3d model of pcb](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/capstone_rev4_3d_screenshot.png)
 
 If you want to make one yourself, the files are [here](capstone_cad_rev3)
 
