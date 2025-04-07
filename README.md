@@ -10,7 +10,7 @@ Currently, this device supports UART, RS232, and GPIB.
 
 ![3d model of pcb](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/capstone_rev4_3d_screenshot.png)
 
-If you want to make one yourself, the files are [here](capstone_cad_rev3)
+If you want to make one yourself, the files are [here](capstone_cad_rev4)
 
 
 
@@ -42,7 +42,7 @@ Obviously, it is not possible to develop a device to encompass every existing co
 #### _UART_
 I chose UART because of its prevalence in open-source projects such as the OpenTrickler, a powder dispensing device that we are using in our SDL. UART is also a simple protocol to implement as it only requires four pins: 3v3, TX, RX, and GND. The end user can configure the Baud rate, parity or stop bits in software. I believe that including this communication allows for other SDLs to integrate their own custom devices and not have to design for network capabilities if they choose to use my device. 
 #### _RS232_
-I chose RS232 because it was very prevalent in older equipment such as the Fischer Scientific Analytical Scale, and some open-source devices such as the OpenRAMAN, a laser spectroscopy device for materials classification. While RS232 is an old communication protocol, it is still useful for simple communication of commands. 
+I chose RS232 because it was very prevalent in older equipment in our lab such as the Fischer Scientific Analytical Scale, and some open-source devices such as the OpenRAMAN, a laser spectroscopy device for materials classification. While RS232 is an old communication protocol, it is still useful for simple communication of commands. 
 #### _GPIB_
 Lastly, I chose GPIB because it was also extremely prevalent in many types of laboratory equipment such as multimeters, spectrum analyzers, and other devices. The issue that many laboratories face with GPIB enabled devices is that adapters such as GPIB to USB can cost more than $1,000 and can only communicate with proprietary software. This can render perfectly usable lab equipment almost completely useless in terms of automation or remote data collection.
 
@@ -60,31 +60,40 @@ I didn’t choose Ethernet because it also defeats the purpose of this project. 
 
 ## Device Assembly
 ### PCB Manufacturing
-At the time of writing, JLCPCB is a very good option for low cost PCB manufacturing. You can get 5 boards for roughly $4 not including shipping. All you need to do is zip these [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone/tree/main/capstone_rev4_gerbers), go to JLCPCB.com, click "upload gerbers" and choose the zipped file. Everything else should populate automatically. You don't need to do any configuration besides choosing the "Lead Free HASL". Feel free to order a stencil as it might make surface mount soldering easier, not required though.
+At the time of writing, JLCPCB is a very good option for low cost PCB manufacturing. You can get 5 boards for roughly $4 not including shipping. All you need to do is zip these [Gerber Files](https://github.com/achihuahua22/Alex-Harris-Capstone/tree/main/capstone_rev4_gerbers), go to JLCPCB.com, click "upload gerbers" and choose the zipped file. Everything else should populate automatically. You don't need to do any configuration besides choosing the "Lead Free HASL" for a lead free surface finish on the pcb. Feel free to order a stencil as it might make surface mount soldering easier, not required though.
 
 ### Parts
-Here is the [BOM](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/bill_of_materials/senior_capstone_bom_rev3.csv) for the pcb components
-   - Unfortunately, all of the components except for one can be purchased from Digikey, the remaining component can be purchased from Mouser
+Here is the [BOM](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/bill_of_materials/senior_capstone_bom_rev4.csv) for the pcb components
+   - Unfortunately, all of the components except for item 15 (SN75161BDW) can be purchased from Digikey, the remaining component can be purchased from Mouser
    - In addition, I would recommend M2.5 standoffs to support the board on top of the raspberry pi
-### PCB
-Here are the [ to order the PCB. I would recommend JLCPCB as their prices are very reasonable for 5 boards. The only downside is shipping can take time if you don't pay for rush shipping.
+   - Solder paste and Heat Gun is recommended for the Surface Mount components as the Resistors, Capacitors, and LED's
 
 ### Building
-I would recommend using solder paste and a heat gun for installing the small surface mount components such as the resistors, capacitors, and LED's and installing the components in the following order:
-1. Resistors
-2. Capacitors
-3. LED's (*pay attention to the orientation of the LED!*)
+I would recommend using solder paste and a heat gun for installing the small surface mount components such as the resistors, capacitors, crystal and LED's and installing the components in the following order:
+1. Resistors (R1-R12)
+2. Crystal Oscillator (Y1)
+3. Capacitors (C1-C8)
+4. LED's (D1-D7) (*pay attention to the orientation of the LED!*)
    - The open part of the rectangle is the anode, the closed part is the cathode
-5. Integrated Circuits
+5. Integrated Circuits (U1-U4) (In order of 1 to 4 is easiest)
 6. Connectors
 
-It is not required to install the components in this order, but is is easier to install the smaller components first so you don't have to navigate around the large connectors.
+It is not required to install the components in this order, but is is easier to install the smaller components first so you don't have to navigate around the large connectors or IC's.
    
 ## Setup
 1. Setup fresh install of [raspberry pi os](https://www.raspberrypi.com/software/)
 2. Configure your network, password, etc to your liking
 3. Download Provided [files](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c) to send data to network
-4. Run the following in the raspberry pi os terminal to configure serial and i2c:
+4. Run and do the following to enable the I2C interface:
+   - Open a terminal and run ```sudo raspi-config```
+   - Select "Interface Options"
+   - Select "P5 I2C"
+   - It will prompt you with "Would you like the ARM I2C interface to be enabled?" *select yes*
+   - Then it will prompt you to reboot *select yes*
+   - After reboot, open another terminal and run ```sudo apt-get update``` and ```sudo apt-get install -y python3-smbus i2c-tools```
+   - Finally shut down the raspberry pi with ```sudo halt```
+   - Wait 10 seconds unplug power and restart
+6. Run the following in the raspberry pi os terminal to configure serial and socket:
    
    - Update package list ```sudo apt update```
    - Install socket ```python3 -m pip install socket```
@@ -92,8 +101,8 @@ It is not required to install the components in this order, but is is easier to 
    - Install WiringPi ```sudo apt install wiringpi```
    - Install build tools ```sudo apt install build-essential```
 
-5. See following [instructions](https://github.com/an-ven/graspib/tree/main) from grasPIB repository to configure the raspberry pi for GPIB
-6. Configure Baud rate, IP, and I2C addresses in code
+7. See following [instructions](https://github.com/an-ven/graspib/tree/main) from grasPIB repository to configure the raspberry pi for GPIB
+8. Configure Baud rate, IP, and I2C addresses in code
 
 
 
