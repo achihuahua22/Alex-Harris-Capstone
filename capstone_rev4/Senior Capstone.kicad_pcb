@@ -3439,6 +3439,17 @@
 			(uuid "a22b581d-dafa-4fab-9c6c-ececd4a11cb8")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_Dsub.3dshapes/DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm.wrl"
+			(offset
+				(xyz -5.5 1.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 		(layer "F.Cu")
@@ -5224,6 +5235,17 @@
 			(uuid "26e70016-ac63-48e2-94c4-a9bc39452888")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_Dsub.3dshapes/DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm.wrl"
+			(offset
+				(xyz -5.5 1.5 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -0)
+			)
+		)
 	)
 	(footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 		(layer "F.Cu")
@@ -8304,6 +8326,17 @@
 			(uuid "acf3e7f0-37af-4b47-879c-54a04f935f53")
 		)
 		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_GPIB.3dshapes/CIB24SRA_3D.STEP"
+			(offset
+				(xyz 11.75 -13.5 7.5)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
@@ -9193,13 +9226,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.wrl"
 			(offset
-				(xyz 0 0 0)
+				(xyz -3.5 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 180 -0)
 			)
 		)
 	)
