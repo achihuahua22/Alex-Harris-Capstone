@@ -104,8 +104,7 @@ It is not required to install the components in this order, but is is easier to 
         Now there should be some gpib* devices in /dev
         Make the module loads on boot by adding gpib_bitbang line to /etc/modules-load.d/modules.conf
 
-When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstalled. Basically just repeat above make and make install steps when kernel gets upgraded...
-
+When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstalled. Basically just repeat above make and make install steps when kernel gets upgraded
     Build and install user space tools
         Enter linux-gpib-user directory: ```$ cd linux-gpib-src-dir/linux-gpib-user```
         If building from svn checkout first run bootstrap script: $ ./bootstrap
@@ -114,7 +113,6 @@ When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs t
         Install user space tools: ```$ sudo make install```
         Make sure that shared library directory (default: /usr/local/lib/) is listed in: /etc/ld.so.conf.d/
         Then run: $ sudo ldconfig
-
     Configure GPIB interface
         Open gpib.conf configuration file $ sudo nano /usr/local/etc/gpib.conf (default location)
         Set board_type = "gpib_bitbang" and other relevant settings (for details refer to included gpib.conf file, linux-gpib documentetion and included template file linux-gpib-src-dir/linux-gpib-user/util/template/gpib.conf)
@@ -122,7 +120,6 @@ When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs t
         Make the last command execute on every startup using crontab entry:
             Edit crontab for root user: ```$ sudo crontab -e```
             Add line the following line to cron tab file: @reboot /usr/local/sbin/gpib_config --minor 0
-
     Enable non root users to use GPIB interface without sudo
         Add new gpib system group: ```$ sudo groupadd -r gpib```
         Append your_user_name to gpib supplementary group: ```$ sudo usermod -a -G gpib your_user_name```
