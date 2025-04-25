@@ -15,18 +15,76 @@ If you want to make one yourself, the files are [here](capstone_cad_rev4)
 
 
 ## Introduction
-  For my senior capstone project, I worked with Dr. Taylor Sparks' self-driving laboratory (SDL) to develop a device to more easily integrate laboratory equipment into an SDL. This device intends to do two things: Allow researchers to easily put information about lab equipment onto their network and save them money. To make a device “easy to use” I wanted to work with hardware that researchers are familiar with as much as possible. This led to me choosing to design a product that is attached to a single board computer such as a Raspberry Pi. Using the Raspberry Pi was the obvious choice because of its prevalence in the research space. 
-
-  What do I mean by “integrating laboratory equipment”? A lot of laboratory equipment at a university research level has very little connection between devices either due to the age of the device or the type of communication protocol included. Another issue is that products can use proprietary connection methods, such as costly software or connectors. This makes the task of developing an interconnected SDL very difficult, especially when you are a student, researcher, or hobbyist with limited resources. 
-
-  I want to develop a device that can put data collected by lab equipment onto the network using a Raspberry Pi and HAT, or a PCB that sits on top of the Pi to handle the communications. The Pi will have an ethernet connection to the network, allowing the user to program it to either send data to a network address or something like a ROS network, depending on their needs.
-
-So what is this device actually doing? 
-One feature is that it merges the two RS232 inputs into a single I2C bus, allowing the user to read data from two ports using one pair of wires.
-Second, the device uses the Raspberry Pi's GPIO pins to interface with a GPIB device by "bit banging" or setting GPIO pins in software instead of hardware communicating over GPIB
-Third, there is a passthrough breakout serial input with status lights to monitor activity.
+This project is a Raspberry Pi Hat that is intended to 
+improve self driving lab connectivity and modularity 
+by allowing researchers to integrate multiple lab 
+devices into their networks. I worked with Dr. Taylor 
+Sparks' self-driving laboratory (SDL) to develop a 
+device to more easily network with lab equipment. 
+A self-driving laboratory is a laboratory where
+everything from specimen handling, experiments, 
+and decision making is fully automated to 
+accelerate research [1]. This device intends to be an 
+easy-to-use device for networking and save 
+researchers money. To make a device “easy to use” I 
+wanted to work with hardware that researchers are 
+familiar with. This led to me choosing to design a 
+board that attaches to a Raspberry Pi. 
+I chose to use a Raspberry Pi based solution
+because of its prevalence in the research space. 
+Many pieces of university research level lab 
+equipment have very little interconnection due to 
+the age of the device or the type of communication 
+protocol. Another issue is that products can use 
+proprietary connection methods, which makes the 
+task of developing an interconnected SDL very 
+difficult [2]. I wanted to develop a device that can 
+put data collected by lab equipment onto the 
+network using a Raspberry Pi and a circuit board 
+that sits on top of the Pi to handle the 
+communications.
 
 ## Design
+### Methods
+I began with researching similar solutions to this 
+problem, and the two options were a series of adapter 
+dongles, or a device that interfaces with a single board 
+computer to allow for communication. I chose this 
+method as it would be easiest for the end user to have a 
+single device that handles lab equipment connectivity.
+I started by purchasing pre-built adapter components 
+and build a breadboard analog of the final device. This 
+device consisted of RS232 adapters and a serial 
+expansion board for a Raspberry Pi. With this, I was able 
+to test the idea of sending device data over the network 
+using ROS and the python socket library.
+
+### Results
+I designed a circuit board that could serve as an add on 
+that connected to the Raspberry Pi’s GPIO port. To 
+expand the capability of the device, a GPIB connection
+was added, taking advantage of the open-source Linux 
+GPIB package [3]. GPIB is a very common protocol with 
+adapters often costing hundreds of dollars.
+The board was manufactured by JLCPCB, hand 
+assembled, revised, and tested thoroughly. A GitHub 
+repository was maintained throughout the project 
+detailing hardware and software setup instructions.
+The low-cost goal was achieved with the total cost being 
+around $40 for the entire device excluding shipping
+
+### Conclusions
+Improvements of the Linux GPIB library are needed to 
+facilitate easy setup of hardware and improved 
+compatibility with the IEEE-488 standard.
+Future works should expand on the software for using 
+the Raspberry Pi to communicate over the local 
+network. Possibly a user interface to improve ease of 
+use
+Future works should also investigate more permanent, 
+universal communication protocols to improve 
+laboratory equipment integration.
+
 ### Communication Protocols
 While there are many communication protocols used in laboratory equipment, a few come up most often when looking at the back of devices in labs around my university. Some of these include:
 
@@ -84,7 +142,7 @@ It is not required to install the components in this order, but is is easier to 
 1. Setup fresh install of [raspberry pi os](https://www.raspberrypi.com/software/)
 2. Configure your network, password, etc to your liking
 3. Download Provided [files](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c) to send data to network
-4. From [graspib documentation](https://github.com/an-ven/graspib/tree/main)
+4. From [graspib documentation](https://github.com/an-ven/graspib/tree/main) : 
 
    Install build tools and dependencies
    - Build tools: ```$ sudo apt install build-essential autoconf automake libtool flex bison```
