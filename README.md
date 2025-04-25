@@ -86,14 +86,14 @@ It is not required to install the components in this order, but is is easier to 
 3. Download Provided [files](https://github.com/achihuahua22/Alex-Harris-Capstone/blob/main/send_to_network.c) to send data to network
 4. From [graspib documentation](https://github.com/an-ven/graspib/tree/main)
 
-    Install build tools and dependencies
-      - Build tools: ```$ sudo apt install build-essential autoconf automake libtool flex bison```
-      - RPi kernel headers: ```$ sudo apt install raspberrypi-kernel-headers```
-      - Python3 headers: ```$ sudo apt install python3-dev```
+   Install build tools and dependencies
+   - Build tools: ```$ sudo apt install build-essential autoconf automake libtool flex bison```
+   - RPi kernel headers: ```$ sudo apt install raspberrypi-kernel-headers```
+   - Python3 headers: ```$ sudo apt install python3-dev```
 
     Download linux-gpib source files
-      - Get release archives (4.3.4 or later) from https://sourceforge.net/projects/linux-gpib/files
-      - or get the latest source from https://sourceforge.net/p/linux-gpib/code/HEAD/tree/
+   - Get release archives (4.3.4 or later) from https://sourceforge.net/projects/linux-gpib/files
+   - or get the latest source from https://sourceforge.net/p/linux-gpib/code/HEAD/tree/
 
    Build and install kernel drivers
    - Enter linux-gpib-kernel directory ```$ cd linux-gpib-src-dir/linux-gpib-kernel```
@@ -104,8 +104,8 @@ It is not required to install the components in this order, but is is easier to 
    - Now there should be some gpib* devices in /dev
    - Make the module loads on boot by adding gpib_bitbang line to /etc/modules-load.d/modules.conf
 
-When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstalled. 
-Basically just repeat above make and make install steps when kernel gets upgraded
+   When Raspberry Pi OS kernel gets upgraded, linux-gpib kernel module also needs to be rebuilt and reinstalled. 
+   Basically just repeat above make and make install steps when kernel gets upgraded
 
    Build and install user space tools
    - Enter linux-gpib-user directory: ```$ cd linux-gpib-src-dir/linux-gpib-user```
