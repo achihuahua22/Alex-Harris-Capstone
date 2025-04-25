@@ -1,8 +1,8 @@
-[1] C. C. R. and Dr. C. P. B. Benjamin P. MacLeod, “Ada: A self-driving laboratory for Clean Energy Technologies,” Inside Unmanned Systems, 
+- [1] C. C. R. and Dr. C. P. B. Benjamin P. MacLeod, “Ada: A self-driving laboratory for Clean Energy Technologies,” Inside Unmanned Systems, 
 https://insideunmannedsystems.com/ada-a-self-driving-laboratory-for-clean-energy-technologies/.
-[2] P. M. Maffettone et al., “What is missing in Autonomous Discovery: Open challenges for the community,” Digital Discovery, 
+- [2] P. M. Maffettone et al., “What is missing in Autonomous Discovery: Open challenges for the community,” Digital Discovery, 
 https://pubs.rsc.org/en/content/articlehtml/2023/dd/d3dd00143a. 
-[3] F.M. Hess, “Linix GPIB Package,” Sourceforge,
+- [3] F.M. Hess, “Linix GPIB Package,” Sourceforge,
 https://linux-gpib.sourceforge.io/
 
 Previous Works:
